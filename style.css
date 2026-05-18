@@ -1,0 +1,15 @@
+body {
+  background: black;
+  color: lime;
+  text-align: center;
+  margin-top: 100px;
+  font-family: Arial;
+}
+
+button {
+  padding: 10px 20px;
+  background: lime;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
