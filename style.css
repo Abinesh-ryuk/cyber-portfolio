@@ -18,15 +18,15 @@
 }
 
 body.light-mode {
-  --bg: #f3f4f6;
+  --bg: #f4f7fb;
   --text: #111827;
-  --card: rgba(255, 255, 255, 0.7);
-  --border: rgba(0, 0, 0, 0.1);
+  --card: rgba(255, 255, 255, 0.85);
+  --border: rgba(0, 0, 0, 0.08);
   --accent: #00b894;
   --secondary: #ffffff;
   --paragraph: #374151;
   --input: #ffffff;
-  --navbar: rgba(255, 255, 255, 0.7);
+  --navbar: rgba(255, 255, 255, 0.85);
 }
 
 body {
@@ -56,9 +56,22 @@ body {
 
 #matrix {
   position: fixed;
+
   top: 0;
   left: 0;
+
+  width: 100%;
+  height: 100%;
+
   z-index: -3;
+
+  opacity: 0.35;
+
+  transition: 0.4s ease;
+}
+
+body.light-mode #matrix {
+  opacity: 0.08;
 }
 
 /* CURSOR GLOW */
@@ -748,4 +761,23 @@ body {
 
     margin: 40px auto;
   }
+}
+body.light-mode .terminal-content {
+  color: #00b894;
+}
+
+body.light-mode .hero-title {
+  color: #00b894;
+}
+
+body.light-mode .section-title h2 {
+  color: #00b894;
+}
+
+body.light-mode .skill-tags span {
+  background: rgba(0, 184, 148, 0.08);
+}
+
+body.light-mode .edu-box {
+  background: rgba(255, 255, 255, 0.7);
 }
